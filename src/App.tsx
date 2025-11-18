@@ -12,6 +12,50 @@ import "reactflow/dist/style.css";
 import TopEvent from "./Components/TopEvent";
 
 const initialNodes: Node<any>[] = [
+ 
+  {
+    id: "legend",
+    position: { x: 900, y: 80 },
+    data: {
+      label: `
+        🔹 Threats – Light Blue
+        🟢 Preventive Controls – Light Green
+        🔸 Consequences – Light Red
+        🟣 Mitigating Controls – Light Purple
+        🟡 Hazard  – Yellow Circle
+        🩷 Top Event – Pink
+      `
+    },
+    style: {
+      background: "white",
+      color: "black",
+      width: 260,
+      height: 160,
+      borderRadius: 12,
+      border: "2px solid black",
+      padding: 10,
+      whiteSpace: "pre-line",
+      fontSize: "12px",
+      lineHeight: "18px"
+    }
+  },
+  {
+    id: "title",
+    position: { x: -70, y: 0 },
+    data: { label: "Bowtie Risk Analysis: Loss of Vehicle Control" },
+    style: {
+      background: "white",
+      color: "black",
+      width: 400,
+      height: 80,
+      borderRadius: 8,
+      border: "2px solid black",
+      padding: 10,
+      textAlign: "center",
+      fontWeight: "bold",
+      fontSize: "20px"
+    }
+  },
   {
     id: "top",
     type: "topEvent",
@@ -26,7 +70,8 @@ const initialNodes: Node<any>[] = [
       border: "2px solid pink",
       padding: 8,
     },
-  },
+  },  
+  
   {
   id: "harzard",
   position: { x: 40, y: 340 },
@@ -374,6 +419,7 @@ const initialEdges: Edge<any>[] = [
   { id: "m3-c3", source: "m3", target: "c3" }
   
 ];
+
 
 export default function App() {
   const [nodes, setNodes] = useState(initialNodes);
