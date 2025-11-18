@@ -217,6 +217,50 @@ const initialNodes: Node<any>[] = [
     },
     className: "node-t3",
   },
+  {
+    id: "b1",
+    position: { x: -250, y: 600 },
+    data: { label: "Securement Inspection: Verifying tension on straps/chains." },
+    style: {
+      background: "#d9f7be",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 12,
+      border: "2px dashed #ffd591",
+      padding: 8,
+    },
+    className: "node-b1",
+  },
+ 
+  {
+    id: "b2",
+    position: { x: -500, y: 600 },
+    data: { label: "Scale Ticket Verification: Confirming legal axle weight distribution." },
+    style: {
+      background: "#d9f7be",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 8,
+      border: "2px dashed #ffd591",
+    },
+    className: "node-b2",
+  },
+  {
+    id: "t4",
+    position: { x: -750, y: 600 },
+    data: { label: "Improper cargo loading (shifting load, overweight trailer)" },
+    style: {
+      background: "#cce7ff",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 8,
+      border: "2px solid #black",
+    },
+    className: "node-t4",
+  },
 
 ];
 const initialEdges: Edge<any>[] = [
@@ -228,7 +272,15 @@ const initialEdges: Edge<any>[] = [
   { id: "harzard-p2", source: "harzard", target: "p2" },
   { id: "p2-p3", source: "p2", target: "p3" },
   { id: "p3-p4", source: "p3", target: "p4" },
-  { id: "p4-t2", source: "p4", target: "t2" }
+  { id: "p4-t2", source: "p4", target: "t2" },
+  { id: "harzard-a2", source: "harzard", target: "a2" },
+  { id: "a2-a3", source: "a2", target: "a3" },
+  { id: "a3-a4", source: "a3", target: "a4" },
+  { id: "a4-a2", source: "a4", target: "t3" },
+  { id: "harzard-b1", source: "harzard", target: "b1" },
+  { id: "b1-b2", source: "b1", target: "b2" },
+  { id: "b2-t4", source: "b2", target: "t4" },
+  
 ];
 
 export default function App() {
