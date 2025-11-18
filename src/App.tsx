@@ -316,8 +316,35 @@ const initialNodes: Node<any>[] = [
       border: "2px solid #E6E0FF",
     },
     className: "node-m2",
+  },
+  {
+    id: "c3",
+    position: { x: 550, y: 500 },
+    data: { label: "Injury to driver" },
+    style: {
+      background: "#ffccc7",
+      color: "#black",
+      width: 160,
+      height: 60,
+      borderRadius: 8,
+      border: "2px solid #ff4d4f",
+    },
+    className: "node-c3",
+  },
+  {
+    id: "m3",
+    position: { x: 300, y: 500 },
+    data: { label: "Emergency communication systems (Quick alert to emergency responders)" },
+    style: {
+      background: "#E6E0FF",
+      color: "#black",
+      width: 200,
+      height: 75,
+      borderRadius: 8,
+      border: "2px solid #E6E0FF",
+    },
+    className: "node-m3",
   }
-
   
 
 
@@ -342,7 +369,9 @@ const initialEdges: Edge<any>[] = [
   { id: "harzard-m1", source: "harzard", target: "m1" },
   { id: "m1-c1", source: "m1", target: "c1" },
   { id: "harzard-m2", source: "harzard", target: "m2" },
-  { id: "m2-c2", source: "m2", target: "c2" }
+  { id: "m2-c2", source: "m2", target: "c2" },
+  { id: "harzard-m3", source: "harzard", target: "m3" },
+  { id: "m3-c3", source: "m3", target: "c3" }
   
 ];
 
