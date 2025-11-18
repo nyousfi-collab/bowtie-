@@ -15,7 +15,7 @@ const initialNodes: Node<any>[] = [
   {
     id: "top",
     type: "topEvent",
-    position: { x: 60, y: 100 },
+    position: { x: 60, y: 200 },
     data: { label: "Driving a commercial vehicle" },
     style: {
       background: "pink",
@@ -29,7 +29,7 @@ const initialNodes: Node<any>[] = [
   },
   {
   id: "harzard",
-  position: { x: 40, y: 240 },
+  position: { x: 40, y: 340 },
   data: { label: "Loss of control over the vehicle at 71 mph" },
   style: {
     background: "yellow",
@@ -159,6 +159,63 @@ const initialNodes: Node<any>[] = [
       border: "2px solid #black",
     },
     className: "node-t2",
+  },
+  {
+    id: "a2",
+    position: { x: -250, y: 450 },
+    data: { label: "Pre-Trip Inspection (PTI): 360-degree check of tires, brakes, lights." },
+    style: {
+      background: "#d9f7be",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 12,
+      border: "2px dashed #ffd591",
+      padding: 8,
+    },
+    className: "node-a2",
+  },
+  {
+    id: "a3",
+    position: { x: -500, y: 450 },
+    data: { label: "En-Route Inspection: Checking hubs and tires at rest stops." },
+    style: {
+      background: "#d9f7be",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 8,
+      border: "2px dashed #ffd591",
+    },
+    className: "node-a3",
+  },
+  {
+    id: "a4",
+    position: { x: -750, y: 450 },
+    data: { label: "TPMS: Tire Pressure Monitoring System alerts." },
+    style: {
+      background: "#d9f7be",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 8,
+      border: "2px dashed #ffd591",
+    },
+    className: "node-a4",
+  },
+  {
+    id: "t3",
+    position: { x: -1000, y: 450 },
+    data: { label: "Mechanical issues (tire blowout, brake fade)" },
+    style: {
+      background: "#cce7ff",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 8,
+      border: "2px solid #black",
+    },
+    className: "node-t3",
   },
 
 ];
