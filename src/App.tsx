@@ -289,6 +289,37 @@ const initialNodes: Node<any>[] = [
     },
     className: "node-m1",
   },
+  {
+    id: "c2",
+    position: { x: 550, y: 350 },
+    data: { label: "Vehicle roll-over" },
+    style: {
+      background: "#ffccc7",
+      color: "#black",
+      width: 160,
+      height: 60,
+      borderRadius: 8,
+      border: "2px solid #ff4d4f",
+    },
+    className: "node-c2",
+  },
+  {
+    id: "m2",
+    position: { x: 300, y: 350 },
+    data: { label: "Automatic braking or stability control systems (ABS/ESC)" },
+    style: {
+      background: "#E6E0FF",
+      color: "#black",
+      width: 200,
+      height: 75,
+      borderRadius: 8,
+      border: "2px solid #E6E0FF",
+    },
+    className: "node-m2",
+  }
+
+  
+
 
 ];
 const initialEdges: Edge<any>[] = [
@@ -309,7 +340,9 @@ const initialEdges: Edge<any>[] = [
   { id: "b1-b2", source: "b1", target: "b2" },
   { id: "b2-t4", source: "b2", target: "t4" },
   { id: "harzard-m1", source: "harzard", target: "m1" },
-  { id: "m1-c1", source: "m1", target: "c1" }
+  { id: "m1-c1", source: "m1", target: "c1" },
+  { id: "harzard-m2", source: "harzard", target: "m2" },
+  { id: "m2-c2", source: "m2", target: "c2" }
   
 ];
 
