@@ -261,6 +261,34 @@ const initialNodes: Node<any>[] = [
     },
     className: "node-t4",
   },
+  {
+    id: "c1",
+    position: { x: 550, y: 200 },
+    data: { label: "Rear-end or multi-vehicle collision" },
+    style: {
+      background: "#ffccc7",
+      color: "#black",
+      width: 160,
+      height: 60,
+      borderRadius: 8,
+      border: "2px solid #ff4d4f",
+    },
+    className: "node-c1",
+  },
+  {
+    id: "m1",
+    position: { x: 300, y: 200 },
+    data: { label: "Defensive maneuver training (Evasive actions, controlled braking)" },
+    style: {
+      background: "#E6E0FF",
+      color: "#black",
+      width: 200,
+      height: 75,
+      borderRadius: 8,
+      border: "2px solid #E6E0FF",
+    },
+    className: "node-m1",
+  },
 
 ];
 const initialEdges: Edge<any>[] = [
@@ -280,6 +308,8 @@ const initialEdges: Edge<any>[] = [
   { id: "harzard-b1", source: "harzard", target: "b1" },
   { id: "b1-b2", source: "b1", target: "b2" },
   { id: "b2-t4", source: "b2", target: "t4" },
+  { id: "harzard-m1", source: "harzard", target: "m1" },
+  { id: "m1-c1", source: "m1", target: "c1" }
   
 ];
 
