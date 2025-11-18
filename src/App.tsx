@@ -103,6 +103,64 @@ const initialNodes: Node<any>[] = [
     },
     className: "node-t1",
   },
+  {
+    id: "p2",
+    position: { x: -250, y: 300 },
+    data: { label: "Fatigue Monitoring System: (If equipped) Lane departure/camera warnings.)" },
+    style: {
+      background: "#d9f7be",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 12,
+      border: "2px dashed #ffd591",
+      padding: 8,
+    },
+    className: "node-p2",
+  },
+  {
+    id: "p3",
+    position: { x: -500, y: 300 },
+    data: { label: "Sterile Cockpit Rule: No phone use while the vehicle is in motion." },
+    style: {
+      background: "#d9f7be",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 8,
+      border: "2px dashed #ffd591",
+    },
+    className: "node-p3",
+  },
+  {
+    id: "p4",
+    position: { x: -750, y: 300 },
+    data: { label: "The 30-Minute Break: Mandatory stop to reset alertness." },
+    style: {
+      background: "#d9f7be",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 8,
+      border: "2px dashed #ffd591",
+    },
+    className: "node-p4",
+  },
+  {
+    id: "t2",
+    position: { x: -1000, y: 300 },
+    data: { label: "Driver fatigue or distraction (eyes off road, phone use, drowsiness)" },
+    style: {
+      background: "#cce7ff",
+      color: "#black",
+      width: 220,
+      height: 70,
+      borderRadius: 8,
+      border: "2px solid #black",
+    },
+    className: "node-t2",
+  },
+
 ];
 const initialEdges: Edge<any>[] = [
   { id: "top-harzard", source: "top", target: "harzard" },
@@ -110,6 +168,10 @@ const initialEdges: Edge<any>[] = [
   { id: "n2-n3", source: "n2", target: "n3" },
   { id: "n3-n4", source: "n3", target: "n4" },
   { id: "n4-t1", source: "n4", target: "t1" },
+  { id: "harzard-p2", source: "harzard", target: "p2" },
+  { id: "p2-p3", source: "p2", target: "p3" },
+  { id: "p3-p4", source: "p3", target: "p4" },
+  { id: "p4-t2", source: "p4", target: "t2" }
 ];
 
 export default function App() {
