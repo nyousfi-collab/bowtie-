@@ -9,7 +9,6 @@ import ReactFlow, {
 } from "reactflow";
 import type { NodeChange, EdgeChange, Connection, Node, Edge } from "reactflow";
 import "reactflow/dist/style.css";
-import TopEvent from "./Components/TopEvent";
 
 const initialNodes: Node<any>[] = [
  
@@ -20,7 +19,7 @@ const initialNodes: Node<any>[] = [
       label: `
         🔹 Threats – Light Blue
         🟢 Preventive Controls – Light Green
-        🔸 Consequences – Light Red
+        🔴 Consequences – Light Red
         🟣 Mitigating Controls – Light Purple
         🟡 Hazard  – Yellow Circle
         🩷 Top Event – Pink
@@ -424,9 +423,6 @@ const initialEdges: Edge<any>[] = [
 export default function App() {
   const [nodes, setNodes] = useState(initialNodes);
   const [edges, setEdges] = useState(initialEdges);
-
-  // register custom node types here
-  const nodeTypes = { topEvent: TopEvent };
 
   const onNodesChange = useCallback(
     (changes: NodeChange[]) =>
