@@ -1,8 +1,22 @@
+#  Acknowledgement  
+This prototype is a student project developed for **DSBA 5122** in collaboration with **Todus Advisors**.  
+ Bowtie Symbols are proprietary of Todus Advisors.
+###  Team 4 Members :
+- **Deborah Litsidjio**  
+- **Nabila Yousfi**  
+- **Francisco Carrillo-Villagr**  
+- **Joshika Indrakumar**
+
+# Bowtie Risk Visualization – Loss of Control at 71 mph  
+**Team 4 – DSBA 5122 (Fall 2025)**  
+**Approach 2: ReactFlow Interactive Prototype**
+
+###  Risk Story Summary :
+
+--
 # Bowtie React App - How to Install
 
 This is a React application that uses **React Flow** for building interactive diagrams. This guide will help you install dependencies and run the app locally.
-
----
 
 ## Prerequisites
 
