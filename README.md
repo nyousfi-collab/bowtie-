@@ -11,7 +11,11 @@ This prototype is a student project developed for **DSBA 5122** in collaboration
 **Team 4 – DSBA 5122 (Fall 2025)**  
 **Approach 2: ReactFlow Interactive Prototype**
 
+
 ###  Risk Story Summary :
+
+This Bowtie focuses on how commercial drivers can lose control at high speed due to road conditions, fatigue, mechanical issues, or cargo loading problems. Preventive and mitigation barriers work together to reduce the likelihood and impact of loss-of-control events.
+
 
 --
 # Bowtie React App - How to Install
