@@ -1,4 +1,4 @@
-# Bowtie React App - How to Install
+# Bowtie React App
 
 This is a React application that uses **React Flow** for building interactive diagrams. This guide will help you install dependencies and run the app locally.
 
@@ -9,6 +9,7 @@ This is a React application that uses **React Flow** for building interactive di
 Make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (version 18 or higher recommended)
+- npm (comes with Node.js) or [Yarn](https://yarnpkg.com/)
 
 ---
 
@@ -17,8 +18,8 @@ Make sure you have the following installed:
 1. **Clone the repository** (if you haven’t already):
 
 ```bash
-git clone https://github.com/nyousfi-collab/bowtie-.git
-cd bowtie-
+git clone <your-repo-url>
+cd <your-repo-folder>
 ```
 
 2. **Install React and React Flow**:
@@ -27,12 +28,16 @@ cd bowtie-
 # Using npm
 npm install react react-dom react-scripts react-flow-renderer
 
+# Or using Yarn
+yarn add react react-dom react-scripts react-flow-renderer
 ```
 
 3. **Install other dependencies** (if you have a `package.json`):
 
 ```bash
 npm install
+# or
+yarn install
 ```
 
 ---
@@ -43,6 +48,8 @@ Start the development server:
 
 ```bash
 npm start
+# or
+yarn start
 ```
 
 This will start your app at [http://localhost:3000](http://localhost:3000) by default. Open this URL in your browser to see your Bowtie app in action.
